@@ -1,12 +1,12 @@
 #include "IBackgroundColor.h"
-#include "iForeColor.h"
+#include "IForeColor.h"
 
 #ifndef IFOREBACKCOLORS_H_
 #define IFOREBACKCOLORS_H_
 
 class IForeBackColors{
 	public:
-		virtual *IForeColor getForeColor() = 0;
-		virtual *IBackgroundcolor getBackgroundColor = 0;
+		virtual IForeColor* getForeColor() = 0;
+		virtual IBackgroundColor* getBackgroundColor() = 0;
 };
 #endif
