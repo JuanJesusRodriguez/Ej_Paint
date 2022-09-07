@@ -1,4 +1,5 @@
 #include "Color.h"
+
 #ifndef __IADDFORECOLOR__HPP
 #define __IADDFORECOLOR__HPP
 

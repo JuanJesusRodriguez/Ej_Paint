@@ -14,4 +14,5 @@ class Rectangle: public Shape
 		Point getPointInitial();
 		Point getPointFinal();
 };
+
 #endif

@@ -2,13 +2,13 @@
 #define __POINT__HPP
 
 class Point{
-        private:
-        double x,y;
+private:
+double x,y;
 
-        public:
-        Point(double x,double y);
-        double getX();
-        double getY();
+public:
+Point(double x,double y);
+double getX();
+double getY();
 };
 
 #endif

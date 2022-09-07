@@ -6,9 +6,10 @@
 
 class IFileWrite{
     private:
-    std::ofstream file;
+        std::ofstream file;
 
     public:
-    virtual void fileWrite(std::ofstream file, std::string data) = 0;
+        virtual void fileWrite(std::ofstream file, std::string data) = 0;
 };
-#endif // __IFILEWRITE__HPP
+
+#endif

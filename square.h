@@ -1,5 +1,6 @@
 #include "Shape.h"
 #include "Point.h"
+
 #ifndef __SQUARE__HPP
 #define __SQUARE__HPP
 
@@ -14,4 +15,4 @@ class Square: public Shape
         Point getPointFinal();
 };
 
-#endif // __SQUARE__HPP
+#endif

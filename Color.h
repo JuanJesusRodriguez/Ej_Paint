@@ -1,13 +1,16 @@
 #include<string>
+
 #ifndef __COLOR__HPP
 #define __COLOR__HPP
+
 using namespace std;
+
 class Color{
     private:
-    string color;
+        string color;
 
     public:
-    Color(string color); 
-    string getColor();
+        Color(string color); 
+        string getColor();
 };
-#endif // __COLOR__HPP
+#endif
