@@ -5,7 +5,8 @@
 
 class IToolbar {
  public:
-    virtual Shape* CreateShape() = 0;
-    virtual Color* PickColor() = 0;
+    IToolbar();
+    virtual Shape* SelectShape() = 0;
+    virtual Color* SelectColor() = 0;
 };
 #endif
