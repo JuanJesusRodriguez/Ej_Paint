@@ -5,7 +5,6 @@
 
 class Square: public Shape
 {
-
     private:
         Point pointInitial;
         Point pointFinal;
