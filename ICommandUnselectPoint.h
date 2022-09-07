@@ -1,10 +1,10 @@
 #include "point.h"
-#ifndef __IUNSELECTPOINT__HPP
-#define __IUNSELECTPOINT__HPP
+#ifndef __ICOMMANDUNSELECTPOINT__HPP
+#define __ICOMMANDUNSELECTPOINT__HPP
 
-    class IUnselectPoint{
+    class ICommandUnselectPoint{
         public:
         virtual void unselectPoint(Point point) = 0;
     };
 
-#endif /* __IUNSELECTPOINT__HPP */
+#endif /* __ICOMMANDUNSELECTPOINT__HPP */
