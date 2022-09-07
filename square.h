@@ -10,9 +10,9 @@ class Square: public Shape
         Point pointInitial;
         Point pointFinal;
     public:
+        Square(Point pointInitial, Point pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){}
         Point getPointInitial();
         Point getPointFinal();
-        void draw(Point pointInitial, Point pointFinal);
 };
 
 #endif // __SQUARE__HPP
