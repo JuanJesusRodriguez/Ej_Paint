@@ -1,5 +1,5 @@
-#include "shape.h"
-#include "color.h"
+#include "Shape.h"
+#include "Color.h"
 #include <fstream>
 #include <string>
 

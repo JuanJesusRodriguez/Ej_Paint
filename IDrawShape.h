@@ -1,4 +1,4 @@
-#include "shape.h"
+#include "Shape.h"
 #ifndef __IDRAWFIGURE__HPP
 #define __IDRAWFIGURE__HPP
 

@@ -1,4 +1,4 @@
-#include "color.h"
+#include "Color.h"
 
 #ifndef IADDCOLOR_H_
 #define IADDCOLOR_H_

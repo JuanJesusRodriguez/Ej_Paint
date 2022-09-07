@@ -1,4 +1,4 @@
-#include "color.h"
+#include "Color.h"
 
 #ifndef IBACKGROUNDCOLOR_H_
 #define IBACKGROUNDCOLOR_H_

@@ -1,4 +1,4 @@
-#include "shape.h"
+#include "Shape.h"
 
 #ifndef IOBTAINSHAPETYPE_H_
 #define IOBTAINSHAPETYPE_H_
