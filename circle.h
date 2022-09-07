@@ -4,7 +4,7 @@
 #define __CIRCLE__HPP
 
 
-class Circle{
+class Circle : public shape{
 
     private:
     Point pointInitial;
