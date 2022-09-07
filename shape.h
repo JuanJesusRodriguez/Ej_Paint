@@ -4,14 +4,10 @@
 
 class Shape
 {
-private:
-    Point pointInitial;
-    Point pointFinal;
-
-public:
-    virtual Point getPointInitial() = 0;
-    virtual Point getPointFinal() = 0;
-    virtual void draw(Point pointInitial ,Point pointFinal) = 0;
+	public:
+		virtual Point getPointInitial() = 0;
+		virtual Point getPointFinal() = 0;
+		virtual void draw(Point pointInitial ,Point pointFinal) = 0;
 };
 
 #endif // __SHAPE__HPP

@@ -6,6 +6,9 @@
 
 class Rectangle: public Shape
 {
+	private:
+		Point pointInitial;
+		Point pointFinal;
 	public:
 		Rectangle(Point pointInitial, Point pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){}
 		Point getPointInitial();
