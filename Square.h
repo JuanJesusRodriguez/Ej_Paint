@@ -13,6 +13,7 @@ class Square: public Shape
         Square(Point pointInitial, Point pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){}
         Point getPointInitial();
         Point getPointFinal();
+        string getShapeType();
 };
 
 #endif

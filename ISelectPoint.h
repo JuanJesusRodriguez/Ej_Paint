@@ -1,4 +1,5 @@
-#include "point.h"
+#include "Point.h"
+
 #ifndef __ISELECTPOINT__HPP
 #define __ISELECTPOINT__HPP
 

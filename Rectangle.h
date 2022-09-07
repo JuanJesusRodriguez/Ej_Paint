@@ -13,6 +13,7 @@ class Rectangle: public Shape
 		Rectangle(Point pointInitial, Point pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){}
 		Point getPointInitial();
 		Point getPointFinal();
+		string getShapeType();
 };
 
 #endif
