@@ -5,7 +5,7 @@
 
 class IObtainShapeType{
 	public:
-		virtual char* ShapeType(Shape* shape)=0;
+		virtual char* ShapeType(Shape* shape) = 0;
 };
 
 #endif
