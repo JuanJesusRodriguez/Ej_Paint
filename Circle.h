@@ -3,7 +3,7 @@
 #ifndef __CIRCLE__HPP
 #define __CIRCLE__HPP
 
-class Circle : public shape{
+class Circle : public Shape{
     private:
     Point pointInitial;
     Point pointFinal;
