@@ -4,6 +4,6 @@
 
 class IselectShape{
     public:
-    virtual void selectShape(Shape Shape) = 0;
+    virtual void selectShape(Shape* Shape) = 0;
 };
 #endif // __ISELECTSHAPE__HPP
