@@ -1,11 +1,11 @@
 #include "Point.h"
 
-#ifndef __ISELECTPOINT__HPP
-#define __ISELECTPOINT__HPP
+#ifndef __ICOMMANDSELECTPOINT__HPP
+#define __ICOMMANDSELECTPOINT__HPP
 
-    class ISelectPoint{
+    class ICommandSelectPoint{
         public:
         virtual void selectPoint(Point point) = 0;
     };
 
-#endif /* __ISELECTPOINT__HPP */
+#endif /* __ICOMMANDSELECTPOINT__HPP */
