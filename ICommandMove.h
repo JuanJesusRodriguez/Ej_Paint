@@ -1,9 +1,9 @@
 #include "Shape.h"
 
-#ifndef __ISHAPEMOVE__HPP
-#define __ISHAPEMOVE__HPP
+#ifndef __ICOMMANDMOVE__HPP
+#define __ICOMMANDMOVE__HPP
 
-class IShapeMove{
+class ICommandMove{
     public:
         virtual void shapeMove(Shape* shape, Point pointReference) = 0;
 };
