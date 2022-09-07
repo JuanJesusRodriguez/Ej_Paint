@@ -1,4 +1,5 @@
 #include "shape.h"
+#include "point.h"
 #ifndef __SQUARE__HPP
 #define __SQUARE__HPP
 
