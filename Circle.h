@@ -1,7 +1,7 @@
 #include "Shape.h"
 #include "Point.h"
 
-//using namespace std;
+using namespace std;
 
 #ifndef __CIRCLE__HPP
 #define __CIRCLE__HPP
