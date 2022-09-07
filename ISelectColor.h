@@ -6,5 +6,4 @@ class IselectColor{
     public:
     virtual void selectColor(Color color) = 0;
 };
-
 #endif // __ISELECTCOLOR__HPP
