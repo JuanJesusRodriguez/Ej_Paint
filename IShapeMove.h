@@ -5,7 +5,7 @@
 
 class IShapeMove{
     public:
-        virtual void shapeMove(Shape* shape) = 0;
+        virtual void shapeMove(Shape* shape, Point pointReference) = 0;
 };
 
 #endif
