@@ -5,7 +5,7 @@
 
 class IAddForeColor{
     public:
-    virtual void addForeColor(Color* color) = 0;
+    virtual void addForeColor(Color* color, int uid) = 0;
     virtual ~IAddForeColor() = 0;
 };
 #endif // __IADDFORECOLOR__HPP
