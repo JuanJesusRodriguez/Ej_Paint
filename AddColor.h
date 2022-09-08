@@ -1,12 +1,13 @@
 #include "Color.h"
+#include "IAddBackgroundColor.h"
 
-#ifndef ADDCOLOR_H_
-#define ADDCOLOR_H_
+#ifndef ADDBACKGROUNDCOLOR_H_
+#define ADDBACKGROUNDCOLOR_H_
 
-class AddColor: public IAddColor
+class AddBackgroundColor: public IAddBackgroundColor
 {
-	AddColor();
-	void addColor(Color color);
+	AddBackgroundColor();
+	void addBackgroundColor(Color color);
 };
 
 #endif
