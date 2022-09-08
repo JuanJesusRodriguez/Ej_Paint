@@ -8,4 +8,5 @@ public:
     CommandApplyBackColor();
     void applyBackColor(Shape *shape, Color color);
 };
+
 #endif // __COMMANDAPLYBACKCOLOR__H
