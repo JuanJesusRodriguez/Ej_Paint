@@ -4,9 +4,9 @@
 #ifndef __IREADFILE__HPP
 #define __IREADFILE__HPP
 
-class IReadFile{
+class IFileRead{
     public:
-        virtual std::fstream readFile(std::string fileFullPath) = 0;
+        virtual std::fstream fileRead(std::string fileFullPath) = 0;
 };
 
 #endif
