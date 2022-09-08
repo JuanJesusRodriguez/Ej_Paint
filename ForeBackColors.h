@@ -1,6 +1,6 @@
 #include "ibackgroundcolor.h"
 #include "iforecolor.h"
-#include "IForeBackColor.h"
+#include "IForeBackColors.h"
 
 #ifndef FOREBACKCOLORS_H_
 #define FOREBACKCOLORS_H_
@@ -11,7 +11,7 @@ class ForeBackColors : public IForeBackColors
 		ForeBackColors(IForeColor* forecolor, IBackgroundColor* backgroundcolor)
 			:forecolor(forecolor), backgroundcolor(backgroundcolor){}
 		IForeColor* getForeColor();
-		IBackgroundcolor* getBackgroundColor();
+		IBackgroundColor* getBackgroundColor();
 	private:
 		IForeColor* forecolor;
 		IBackgroundColor* backgroundcolor;
