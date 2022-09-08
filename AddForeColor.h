@@ -1,7 +1,6 @@
 #include "IAddForeColor.h"
 
-class AddforeColor : public IAddForeColor{
+class AddForeColor : public IAddForeColor{
 
-    void addForeColor(Color* color);
-
+    void addForeColor(Color* color,int uid);
 };
