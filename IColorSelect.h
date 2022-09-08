@@ -1,7 +1,7 @@
 #include "Color.h"
 
-#ifndef __ISELECTCOLOR__HPP
-#define __ISELECTCOLOR__HPP
+#ifndef __ICOLORSELECT__HPP
+#define __ICOLORSELECT__HPP
 
 class IColorSelect{
     public:
