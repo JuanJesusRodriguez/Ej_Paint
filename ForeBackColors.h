@@ -8,13 +8,13 @@
 class ForeBackColors : public IForeBackColors
 {
 	public:
-		ForeBackColors(IForeColor* forecolor, IBackgroundColor* backgroundcolor)
-			:forecolor(forecolor), backgroundcolor(backgroundcolor){}
+		ForeBackColors(IForeColor* foreColor, IBackgroundColor* backgroundColor)
+			:foreColor(foreColor), backgroundColor(backgroundColor){}
 		IForeColor* getForeColor();
 		IBackgroundColor* getBackgroundColor();
 	private:
-		IForeColor* forecolor;
-		IBackgroundColor* backgroundcolor;
+		IForeColor* foreColor;
+		IBackgroundColor* backgroundColor;
 
 };
 
