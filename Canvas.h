@@ -11,7 +11,9 @@ class Canvas: public ICanvas
 		Canvas();
 		void addColoredShape(IColoredShape* coloredShape);
 		void deleteColoredShape(int uid);
-	private:
+		void modify(void (*change)(int));
+		
+	private:                           
 		std::map<int, IColoredShape*> drawnShape;
 };
 

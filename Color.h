@@ -10,7 +10,7 @@ class Color{
         string color;
 
     public:
-        Color(string color); 
+        Color(string color);
         string getColor();
 };
 #endif
