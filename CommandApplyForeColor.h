@@ -8,4 +8,5 @@ public:
     CommandApplyForeColor();
     void applyForeColor(Shape *shape, Color color);
 };
+
 #endif // __COMMANDAPPLYFORECOLOR__HPP
