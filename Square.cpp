@@ -11,3 +11,8 @@ Point Square::getPointInitial()
 {
     return this->pointInitial;
 }
+
+std::string Square::getShapeType()
+{
+    return "square";
+}
