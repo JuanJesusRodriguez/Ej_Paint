@@ -7,5 +7,3 @@
 {
     Shape* shapeSelect(std::string shapeTypeName){};
 };
-
-#endif
