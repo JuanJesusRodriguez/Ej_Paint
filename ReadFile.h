@@ -1,7 +1,7 @@
-#include"IReadFile.h"
+#include"IFileRead.h"
 
-class ReadFile : public IReadFile{
+class FileRead : public IFileRead{
 
-    ReadFile();
-    void readFile(std::ifstream file);
+    FileRead();
+    void fileRead(std::ifstream file);
 };
