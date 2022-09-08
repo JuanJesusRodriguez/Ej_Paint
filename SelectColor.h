@@ -1,7 +1,7 @@
-#include "IselectColor.h"
+#include "IColorSelect.h"
 
-class SelectColor : public ISelectColor {
+class ColorSelect : public IColorSelect {
     public:
-    SelectColor();
-    void selectColor(Color color);
+    ColorSelect();
+    void colorSelect(Color color);
 };
