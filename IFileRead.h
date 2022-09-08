@@ -7,7 +7,7 @@
 
 class IFileRead{
     public:
-        virtual std::list<std::string> fileRead(std::fstream) = 0;
+        virtual std::list<std::string> fileRead(std::string path) = 0;
 };
 
 #endif

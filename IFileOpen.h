@@ -1,3 +1,5 @@
+/*DEPRECATED
+
 #include <fstream>
 #include <string>
 
@@ -10,3 +12,5 @@ class IFileOpen{
 };
 
 #endif
+
+*/
