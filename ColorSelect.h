@@ -6,7 +6,7 @@ class ColorSelect : public IColorSelect
 {
 public:
     ColorSelect();
-    void colorSelect(Color color);
+    Color colorSelect(string colorTag);
 };
 
 #endif

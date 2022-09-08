@@ -5,5 +5,6 @@
 	class ICommandCreate{
 	public:
 		virtual void create(Shape* shape, IPointsInitialFinal* pointsInitialFinal) = 0;
+		virtual ~ICommandCreate() = 0;
 	};
 #endif

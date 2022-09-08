@@ -7,6 +7,7 @@
 class IShapeSelect{
     public:
         virtual Shape* shapeSelect(std::string shapeTypeName) = 0;
+        virtual ~IShapeSelect() = 0;
 };
 
 #endif

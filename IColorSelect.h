@@ -6,6 +6,7 @@
 class IColorSelect{
     public:
         virtual void colorSelect(Color color) = 0;
+        virtual ~IColorSelect() = 0;
 };
 
 #endif
