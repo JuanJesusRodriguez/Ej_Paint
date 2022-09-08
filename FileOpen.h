@@ -1,3 +1,5 @@
+/* DEPRECATED
+
 #include "IFileOpen.h"
 
 #ifndef __FILEOPEN__HPP
@@ -10,3 +12,5 @@ class FileOpen: public IFileOpen
 };
 
 #endif
+
+*/

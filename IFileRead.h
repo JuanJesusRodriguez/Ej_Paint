@@ -8,6 +8,7 @@
 class IFileRead{
     public:
         virtual std::list<std::string> fileRead(std::string path) = 0;
+        virtual ~IFileRead() = 0;
 };
 
 #endif

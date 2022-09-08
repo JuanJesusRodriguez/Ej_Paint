@@ -7,6 +7,7 @@
 class IObtainShapeType{
 	public:
 		virtual std::string ShapeType(Shape* shape) = 0;
+		virtual ~IObtainShapeType() = 0;
 };
 
 #endif

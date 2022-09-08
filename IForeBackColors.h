@@ -8,5 +8,6 @@ class IForeBackColors{
 	public:
 		virtual IForeColor* getForeColor() = 0;
 		virtual IBackgroundColor* getBackgroundColor() = 0;
+		virtual ~IForeBackColors() = 0;
 };
 #endif

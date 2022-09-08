@@ -5,6 +5,7 @@
 
 class ShapeSelect: public IShapeSelect
 {
+    //To be called from IToolbar::SelectShape
     Shape* shapeSelect(std::string shapeTypeName){};
 };
 

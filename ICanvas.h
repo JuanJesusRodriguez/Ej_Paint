@@ -7,6 +7,7 @@ class ICanvas{
 	public:
 		virtual void addColoredShape(IColoredShape* coloredShape) = 0;
 		virtual void deleteColoredShape(int uid) = 0;
+		virtual ~ICanvas() = 0;
 };
 
 #endif

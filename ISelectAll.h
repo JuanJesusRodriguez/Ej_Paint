@@ -9,6 +9,7 @@
 class ISelectAll{
     public:
         virtual std::list<std::string> selectAll() = 0;
+        virtual ~ISelectAll() = 0;
 };
 
 #endif

@@ -4,6 +4,7 @@
 
 class ICommandRemove{
 	virtual void remove(int id, Point point)=0;
+	virtual ~ICommandRemove() = 0;
 };
 
 #endif

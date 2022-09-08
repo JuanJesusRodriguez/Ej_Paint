@@ -7,5 +7,6 @@ class IColoredShape{
 	public:
 		virtual Shape* getShape() = 0;
 		virtual IForeBackColors* getColors() = 0;
+		virtual ~IColoredShape() = 0;
 };
 #endif

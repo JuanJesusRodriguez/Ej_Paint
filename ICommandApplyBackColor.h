@@ -7,6 +7,7 @@ class ICommandApplyBackColor{
 
     public:
     virtual void applyBackColor(Shape* shape,Color color) = 0;
+    virtual ~ICommandApplyBackColor() = 0;
 };
 
 #endif // __ICOMMANDAPLYBACKCOLOR__H
