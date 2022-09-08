@@ -1,8 +1,8 @@
 #include <fstream>
 #include <string>
 
-#ifndef __IREADFILE__HPP
-#define __IREADFILE__HPP
+#ifndef __IFILEREAD__HPP
+#define __IFILEREAD__HPP
 
 class IFileRead{
     public:
