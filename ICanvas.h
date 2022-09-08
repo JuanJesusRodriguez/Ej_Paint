@@ -5,7 +5,7 @@
 
 class ICanvas{
 	public:
-		virtual void addColoredShape(IColoredShape* coloredshape) = 0;
+		virtual void addColoredShape(IColoredShape* coloredShape) = 0;
 		virtual void deleteColoredShape(int uid) = 0;
 };
 
