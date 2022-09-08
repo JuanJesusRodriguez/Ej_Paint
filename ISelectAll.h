@@ -1,6 +1,6 @@
-#include "Shape.h"
 //#include "boost/uuid/uuid.hpp"
 #include<list>
+#include<string>
 
 
 #ifndef __ISELECTALL__HPP
