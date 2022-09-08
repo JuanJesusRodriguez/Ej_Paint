@@ -5,7 +5,7 @@
 
 class IAddColor{
 	public:
-		virtual void addColor() = 0;
+		virtual void addColor(Color color) = 0;
 };
 
 #endif
