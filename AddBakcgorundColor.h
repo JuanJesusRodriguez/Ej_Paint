@@ -7,7 +7,7 @@
 class AddBackgroundColor: public IAddBackgroundColor
 {
 	AddBackgroundColor();
-	void addBackgroundColor(Color color);
+	void addBackgroundColor(Color* color, int uid);
 };
 
 #endif

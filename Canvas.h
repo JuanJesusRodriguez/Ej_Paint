@@ -1,5 +1,6 @@
 #include "ICanvas.h"
 #include "IColoredShape.h"
+#include "Color.h"
 #include <map>
 
 #ifndef CANVAS_H_
@@ -11,7 +12,7 @@ class Canvas: public ICanvas
 		Canvas();
 		void addColoredShape(IColoredShape* coloredShape);
 		void deleteColoredShape(int uid);
-		void modify(void (*change)(int));
+		void modify(void (*change)(Color, int));
 		
 	private:                           
 		std::map<int, IColoredShape*> drawnShape;

@@ -5,7 +5,7 @@
 
 class IAddBackgroundColor{
 	public:
-		virtual void addColor(Color color, int uid) = 0;
+		virtual void addColor(Color* color, int uid) = 0;
 		virtual ~IAddBackgroundColor() = 0;
 };
 
