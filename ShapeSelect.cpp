@@ -1,9 +1,4 @@
  #include "ShapeSelect.h"
  
- //class ShapeSelect: 
- //ShapeSelect::shapeSelect(std::string shapeTypeName){};
+ Shape* ShapeSelect::shapeSelect(std::string shapeTypeName){/*TBD*/};
 
- class ShapeSelect: public IShapeSelect
-{
-    Shape* shapeSelect(std::string shapeTypeName){};
-};
