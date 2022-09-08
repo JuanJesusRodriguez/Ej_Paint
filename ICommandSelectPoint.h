@@ -6,6 +6,7 @@
     class ICommandSelectPoint{
         public:
         virtual void selectPoint(Point point) = 0;
+        virtual void ~ICoimmandSelectPoint() = 0;
     };
 
 #endif /* __ICOMMANDSELECTPOINT__HPP */

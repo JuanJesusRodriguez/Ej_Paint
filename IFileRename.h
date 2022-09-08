@@ -8,6 +8,7 @@
 class IFileRename {
     public:
         virtual void fileRename(ICurrentFilePath* currentFilePath, std::string newFileName) = 0;
+        virtual ~IFileRename() = 0;
 };
 
 #endif

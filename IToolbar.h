@@ -8,5 +8,6 @@ class IToolbar {
  public:
     virtual Shape* SelectShape() = 0;
     virtual Color* SelectColor() = 0;
+    virtual ~IToolbar() = 0;
 };
 #endif

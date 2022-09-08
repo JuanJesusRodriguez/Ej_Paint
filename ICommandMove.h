@@ -6,6 +6,7 @@
 class ICommandMove{
     public:
         virtual void shapeMove(Shape* shape, Point pointReference) = 0;
+        virtual ~ICommandMove() = 0;
 };
 
 #endif

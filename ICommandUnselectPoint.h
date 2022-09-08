@@ -5,6 +5,7 @@
     class ICommandUnselectPoint{
         public:
         virtual void unselectPoint(Point point) = 0;
+        virtual ~ICommandUnselectPoint() = 0;
     };
 
 #endif /* __ICOMMANDUNSELECTPOINT__HPP */

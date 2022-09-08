@@ -6,6 +6,7 @@
 class IShapeDraw{
     public:
         virtual void shapeDraw(Shape* shape) = 0;
+        virtual ~IShapeDraw() = 0;
 };
 
 #endif

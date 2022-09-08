@@ -14,6 +14,7 @@ class IRemoveAll{
         virtual void removeAll(std::list<std::string>) = 0;
         */
         virtual void removeAll(std::list<T>) = 0;
+        virtual ~IRemoveAll() = 0;
 };
 
 #endif

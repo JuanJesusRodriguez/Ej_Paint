@@ -6,6 +6,7 @@
 class IForeColor{
 	public:
 		virtual Color getColor() = 0;
+		virtual ~IForeColor() = 0;
 };
 
 #endif

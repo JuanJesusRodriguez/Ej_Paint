@@ -7,6 +7,7 @@ using namespace std;
     class ICommandList{
         public:
         virtual void list(string type,Point point) = 0;
+        virtual ~ICommandList() = 0;
     };
 
 #endif /* __ICOMMANDLIST__HPP */

@@ -6,6 +6,7 @@
 class IBackgroundColor{
 	public:
 		virtual Color getColor() = 0;
+		virtual ~IBackgroundColor() = 0;
 };
 
 #endif

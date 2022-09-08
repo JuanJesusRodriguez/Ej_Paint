@@ -5,6 +5,7 @@
 class IPointsInitialFinal{
 	virtual Point PointInitial()=0;
 	virtual Point PointFinal()=0;
+	virtual ~IPointsInitialFinal() = 0;
 };
 
 #endif
