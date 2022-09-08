@@ -1,5 +1,6 @@
 #include "Shape.h"
 #include "IObtainShapeType.h"
+#include <string>
 
 #ifndef OBTAINSHAPETYPE_H_
 #define OBTAINSHAPETYPE_H_
@@ -8,7 +9,7 @@ class ObtainShapeType: public IObtainShapeType
 {
 	public:
 		ObtainShapeType();
-		char* ShapeType(Shape* shape);
+		std::string ShapeType(Shape* shape);
 };
 
 #endif
