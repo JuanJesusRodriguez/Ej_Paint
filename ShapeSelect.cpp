@@ -1,3 +1,11 @@
  #include "ShapeSelect.h"
  
- ShapeSelect::shapeSelect(std::string shapeTypeName){};
+ //class ShapeSelect: 
+ //ShapeSelect::shapeSelect(std::string shapeTypeName){};
+
+ class ShapeSelect: public IShapeSelect
+{
+    Shape* shapeSelect(std::string shapeTypeName){};
+};
+
+#endif
