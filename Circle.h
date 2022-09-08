@@ -9,10 +9,10 @@ using namespace std;
 class Circle: public Shape
 {
     private:
-        Point pointInitial;
-        Point pointFinal;
+        Point _pointInitial;
+        Point _pointFinal;
     public:
-        Circle(Point pointInitial, Point pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){}
+        Circle(Point pointInitial, Point pointFinal):_pointInitial(pointInitial), _pointFinal(pointFinal){}
         Point getPointInitial();
         Point getPointFinal();
         string getShapeType();
