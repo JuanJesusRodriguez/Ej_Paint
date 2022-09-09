@@ -24,5 +24,5 @@ Shape* ShapeConstructors::constructedShape(std::string shapeTypeName){
 }
 
 bool ShapeConstructors::isValidShape(std::string shapeTypeName){
-	return allConstructors.find(shapeTypeName)==allConstructors.end();
+	return allConstructors.find(shapeTypeName)!=allConstructors.end();
 }
