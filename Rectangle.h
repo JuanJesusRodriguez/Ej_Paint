@@ -11,7 +11,7 @@ class Rectangle: public Shape
 		Point pointInitial;
 		Point pointFinal;
 	public:
-		Rectangle();
+		Rectangle(){}
 		Rectangle(Point pointInitial, Point pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){}
 		Point getPointInitial();
 		Point getPointFinal();
