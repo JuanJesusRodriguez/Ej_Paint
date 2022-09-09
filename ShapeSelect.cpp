@@ -1,12 +1,7 @@
- #include "ShapeSelect.h"
- #include "Rectangle.h"
- 
+#include "ShapeSelect.h"
+
  Shape* ShapeSelect::shapeSelect(std::string shapeTypeName)
  {
-    if(shapeTypeName=="rectangle")
-    {
-        Shape* s = new Rectangle();
-        return s;
-    }
+	 return iShapeConstructors->constructedShape(shapeTypeName);
  };
 
