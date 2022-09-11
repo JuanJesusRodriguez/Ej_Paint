@@ -1,7 +1,10 @@
 #include"IShapeDraw.h"
+#include "ICanvas.h"
 
 class ShapeDraw : public IShapeDraw{
-
-    ShapeDraw();
-    void shapeDraw(Shape* shape);
+	public:
+    	ShapeDraw(){}
+    	void shapeDraw(IColoredShape* coloredShape);
+	private:
+    	ICanvas* canvas;
 };
