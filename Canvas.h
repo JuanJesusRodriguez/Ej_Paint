@@ -12,10 +12,10 @@ class Canvas: public ICanvas
 		Canvas();
 		void addColoredShape(IColoredShape* coloredShape);
 		void deleteColoredShape(int uid);
-		void modify(void (*change)(Color, int));
+		void modify(Color* color, IColoredShape* (*change)(IColoredShape*, Color), int uid);
 		
 	private:                           
-		std::map<int, IColoredShape*> drawnShape;
+		static std::map<int, IColoredShape*> drawnShape;
 };
 
 #endif

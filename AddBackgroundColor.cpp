@@ -1,14 +1,14 @@
-#include "AddForeColor.h"
+#include "AddBackgroundColor.h"
 #include "ICanvas.h"
 #include "IColoredShape.h"
 
-void AddForeColor::addForeColor(Color* color,int uid){
+void addBackgroundColor::addBackgroundColor(Color* color,int uid){
     iCanvas->modify(color, &modifyColoredShape, uid);
 }
 
 IColoredShape* modifyColoredShape(IColoredShape* coloredShape, Color color){
 	IForeBackColors* newForeBackColor = coloredShape->getColors();
-	IForeColor* newForeColor = new ForeColor(color);
-	newForeBackColor = new ForeBackColor(newForeColor, newForeBackColor->getBackgroundColor());
+	IBackgroundColor* newBackgroundColor = new BackgroundColor(color);
+	newForeBackColor = new ForeBackColor(newForeBackColor->getForeColor(), newBackgroundColor);
 	return ColoredShape(coloredShape->getShape(), newForeBackColor);
 }
