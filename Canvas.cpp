@@ -8,3 +8,8 @@ void Canvas::addColoredShape(IColoredShape* coloredShape){
 void Canvas::deleteColoredShape(int uid){
     drawnShape.erase(uid);
 }
+
+void modify(void (*ptr_change)(string property, int uid)){
+    if(ptr_change != NULL){
+            //ptr_change(property,uid);       
+}
