@@ -21,6 +21,9 @@ class Toolbar: public IToolbar{
 
 		map<string, FactoryShape*> shapeFactories;
 		map<string, FactoryColor*> colorFactories;
+
+		void addShapeFactory(string factoryName, FactoryShape* factoryType);
+		void addColorFactory(string factoryName, FactoryColor* factoryType);
 		//map<string, FactoryColor*> colorFactories;
 
 		/*

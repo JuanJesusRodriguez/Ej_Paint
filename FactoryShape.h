@@ -3,11 +3,12 @@
 
 #include "Shape.h"
 #include "Color.h"
+#include "IFactoryShape.h"
 
-class FactoryShape
+class FactoryShape: public IFactoryShape
 {
 public:
-	virtual Shape* createShape(Point* p1, Point* p2, Color* colorBorder, Color* colorArea) = 0;
+	Shape* createShape(Point* p1, Point* p2, Color* colorBorder, Color* colorArea);
 };
 
 class FactoryCircle: public FactoryShape
