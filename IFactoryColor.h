@@ -4,7 +4,7 @@
 
 class IFactoryColor {
     public:
-    virtual Color* createColor() = 0;
+        virtual Color* createColor() = 0;
 };
 
 #endif /* __ICOLORFACTORY_H_ */
