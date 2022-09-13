@@ -20,7 +20,7 @@ public:
     }
     void execute(){
         //Falta funcion
-        canvas_->addNewBackgroundColor(uid_,toolbar_->getColor(backColor_));
+        canvas_->addNewBackgroundColor(uid_,toolbar_->SelectColor(backColor_));
     }
 };
 
