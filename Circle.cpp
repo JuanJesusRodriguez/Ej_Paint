@@ -1,15 +1,15 @@
 #include "Circle.h"
 
-Circle::Circle(Point pointInitial, Point pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){
-	colorBorder = new ColorBlack();
-	colorArea =  new ColorWhite();
+Circle::Circle(Point* pointInitial, Point* pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){
+	colorBorder = new Color(COLOR_BLACK);
+	colorArea =  new Color(COLOR_WHITE);
 }
 
-Point Circle::getPointInitial(){
+Point* Circle::getPointInitial(){
 	return pointInitial;
 }
 
-Point Circle::getPointFinal(){
+Point* Circle::getPointFinal(){
 	return pointFinal;
 }
 
@@ -21,11 +21,11 @@ Color* Circle::getForeColor(){
 	return colorBorder;
 }
 
-void Circle::setPointInitial(Point point){
+void Circle::setPointInitial(Point* point){
 	pointInitial = point;
 }
 
-void Circle::setPointFinal(Point point){
+void Circle::setPointFinal(Point* point){
 	pointFinal = point;
 }
 

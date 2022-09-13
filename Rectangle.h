@@ -8,18 +8,18 @@
 class Rectangle: public Shape
 {
 	private:
-		Point pointInitial;
-		Point pointFinal;
+		Point* pointInitial;
+		Point* pointFinal;
 		Color* colorBorder;
 		Color* colorArea;
 	public:
-		Rectangle(Point pointInitial, Point pointFinal);
-        Point getPointInitial();
-		Point getPointFinal();
+		Rectangle(Point* pointInitial, Point* pointFinal);
+        Point* getPointInitial();
+		Point* getPointFinal();
 		Color* getBackgroundColor();
 		Color* getForeColor();
-		void setPointInitial(Point point);
-		void setPointFinal(Point point);
+		void setPointInitial(Point* point);
+		void setPointFinal(Point* point);
 		void setBackgroundColor(Color* color);
 		void setForeColor(Color* color);
 		std::string getShapeType();

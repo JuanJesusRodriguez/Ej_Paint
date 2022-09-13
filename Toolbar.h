@@ -12,15 +12,16 @@
 
 class Toolbar: public IToolbar{
 	public:
-		Shape* SelectShape(std::string shapeTag);
-		Color* SelectColor(std::string colorTag);
+		Shape* SelectShape(std::string shapeType);
+		Color* SelectColor(); //Now there is only the generic type of color, it is unnecessary to specify an string colorType.
+		Color* SelectColor(std::string colorType);
 		void initFactoriesColors();
 		void initFactoriesShapes();
 
 	private:
 
-		map<string, FactoryShape*> shapeFactories;
-		map<string, FactoryColor*> colorFactories;
+		map<string, FactoryShape*> FactoriesShape;
+		map<string, FactoryColor*> FactoriesColor;
 
 		void addShapeFactory(string factoryName, FactoryShape* factoryType);
 		void addColorFactory(string factoryName, FactoryColor* factoryType);
