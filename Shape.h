@@ -14,8 +14,8 @@ class Shape
 		virtual Color* getForeColor()=0;
 		virtual void setPointInitial(Point point) = 0;
 		virtual void setPointFinal(Point point) = 0;
-		virtual void setBackgroundColor(Color color)=0;
-		virtual void setForeColor(Color color)=0;
+		virtual void setBackgroundColor(Color* color)=0;
+		virtual void setForeColor(Color* color)=0;
 		virtual std::string getShapeType() = 0;
 		virtual ~Shape()=0;
 };
