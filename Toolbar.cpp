@@ -13,7 +13,7 @@ Color* Toolbar::SelectColor(std::string colorTag){
 }
 */
 
-Shape* Toolbar::SelectShape(std::string shapeTag)
+Shape* Toolbar::SelectShape(std::string shapeTag, Point* p1, Point* p2, Color* colorBorder, Color* colorArea)
 {
 	if(FactoriesShape.find(shapeTag) == FactoriesShape.end())
 	{
@@ -22,7 +22,7 @@ Shape* Toolbar::SelectShape(std::string shapeTag)
 
 	FactoryShape* factoryShape = FactoriesShape[shapeTag];
 
-	Shape* s=factoryShape->createShape();
+	Shape* s=factoryShape->createShape(p1, p2, colorBorder, colorArea);
 }
 Color* Toolbar::SelectColor(std::string colorTag)
 {
