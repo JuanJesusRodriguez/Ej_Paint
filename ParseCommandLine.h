@@ -5,7 +5,7 @@
 #define PARSECOMMANDLINE_H_
 
 struct CommandParseLine{
-	std::string typecommand;
+	std::string typeCommand;
 	std::string typeShape;
 	double initialPointX;
 	double initialPointY;
