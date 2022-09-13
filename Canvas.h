@@ -16,8 +16,8 @@ public:
 	void unselectAll();
 	void addNewForeColor(int uid, Color* color);
 	void addNewBackgroundColor(int uid, Color* color);
-	void move(int uid, Point* point);
-	void remove(int uid, Point* point);
+	void move(int uid, Point pointInitial, Point pointFinal);
+	void remove(int uid, Point point);
 
 private:
 	int nextId = 0;
