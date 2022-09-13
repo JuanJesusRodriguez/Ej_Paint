@@ -15,17 +15,17 @@ class Parser: public IParser{
 
 		void resetCommandParseLine();
 		void setupAllCommands();
-		void setupCreate();
-		void setupList();
-		void setupSelect();
-		void setupSelectAll();
-		void setupUnSelect();
-		void setupUnselectAll();
-		void setupApplyForeColor();
-		void setupApplyBackgroundColor();
-		void setupMove();
-		void setupRemove();
-		void setupOpen();
+		void setupCreate(CLI::App* cliApp, CommandParseLine* commandParseLine);
+		void setupList(CLI::App* cliApp, CommandParseLine* commandParseLine);
+		void setupSelect(CLI::App* cliApp, CommandParseLine* commandParseLine);
+		void setupSelectAll(CLI::App* cliApp, CommandParseLine* commandParseLine);
+		void setupUnselect(CLI::App* cliApp, CommandParseLine* commandParseLine);
+		void setupUnselectAll(CLI::App* cliApp, CommandParseLine* commandParseLine);
+		void setupApplyForeColor(CLI::App* cliApp, CommandParseLine* commandParseLine);
+		void setupApplyBackgroundColor(CLI::App* cliApp, CommandParseLine* commandParseLine);
+		void setupMove(CLI::App* cliApp, CommandParseLine* commandParseLine);
+		void setupRemove(CLI::App* cliApp, CommandParseLine* commandParseLine);
+		void setupOpen(CLI::App* cliApp, CommandParseLine* commandParseLine);
 };
 
 #endif
