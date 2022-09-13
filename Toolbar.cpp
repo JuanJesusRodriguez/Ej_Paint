@@ -1,17 +1,7 @@
 #include "Toolbar.h"
 #include<map>
+#define TOOLBAR_DEFAULT_COLOR __COLOR__HPP_DEFAULT_COLOR
 //#include "FactoryShape.h"
-
-/*
-Shape* Toolbar::SelectShape(std::string shapeTag){
-	return shapeSelector->shapeSelect(shapeTag);
-}
-
-Color* Toolbar::SelectColor(std::string colorTag){
-	return colorSelector->colorSelect(colorTag);
-	
-}
-*/
 
 Shape* Toolbar::SelectShape(std::string shapeTag, Point* p1, Point* p2, Color* colorBorder, Color* colorArea)
 {
@@ -24,11 +14,18 @@ Shape* Toolbar::SelectShape(std::string shapeTag, Point* p1, Point* p2, Color* c
 
 	Shape* s=factoryShape->createShape(p1, p2, colorBorder, colorArea);
 }
-Color* Toolbar::SelectColor(std::string colorTag)
+
+Color* Toolbar::SelectColor(std::string colorTag=TOOLBAR_DEFAULT_COLOR)
 {
+		if(FactoriesColor.find(colorTag) == FactoriesColor.end())
+	{
+		throw new std::exception(); //FactoryNotFoundException(key);
+	}
 
+	FactoryColor* factoryColor = FactoriesColor[colorTag];
+
+	Color* s=factoryColor->createColor(colorTag);
 }
-
 
 void Toolbar::initFactoriesColors()
 {
