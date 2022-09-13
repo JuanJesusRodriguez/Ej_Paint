@@ -10,10 +10,10 @@ public:
 	virtual Shape* createShape(Point* p1, Point* p2, Color* colorBorder, Color* colorArea) = 0;
 };
 
-class FactoryCicle: public FactoryShape
+class FactoryCircle: public FactoryShape
 {
 public:
-	FactoryCicle() {}
+	FactoryCircle() {}
 	Shape* createShape(Point* p1, Point* p2, Color* colorBorder, Color* colorArea);
 };
 
