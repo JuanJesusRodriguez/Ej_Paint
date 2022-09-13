@@ -1,11 +1,11 @@
 #include "Square.h"
 
-Square::Square(Point pointInitial, Point pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){
-	colorBorder = new ColorBlack();
-	colorArea =  new ColorWhite();
+Square::Square(Point* pointInitial, Point* pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){
+	colorBorder = new Color(COLOR_BLACK);
+	colorArea =  new Color(COLOR_WHITE);
 }
 
-Point Square::getPointInitial(){
+Point* Square::getPointInitial(){
 	return pointInitial;
 }
 
@@ -17,11 +17,11 @@ Color* Square::getForeColor(){
 	return colorBorder;
 }
 
-void Square::setPointInitial(Point point){
+void Square::setPointInitial(Point* point){
 	pointInitial = point;
 }
 
-void Square::setPointFinal(Point point){
+void Square::setPointFinal(Point* point){
 	pointFinal = point;
 }
 

@@ -13,6 +13,23 @@ Color* Toolbar::SelectColor(std::string colorTag){
 }
 */
 
+Shape* Toolbar::SelectShape(std::string shapeTag)
+{
+	if(FactoriesShape.find(shapeTag) == FactoriesShape.end())
+	{
+		throw new std::exception(); //FactoryNotFoundException(key);
+	}
+
+	FactoryShape* factoryShape = FactoriesShape[shapeTag];
+
+	Shape* s=factoryShape->createShape();
+}
+Color* Toolbar::SelectColor(std::string colorTag)
+{
+
+}
+
+
 void Toolbar::initFactoriesColors()
 {
 	FactoryColor* factoryColor = new FactoryColor();

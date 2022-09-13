@@ -8,8 +8,8 @@
 class Shape
 {
 	public:
-		virtual Point getPointInitial() = 0;
-		virtual Point getPointFinal() = 0;
+		virtual Point* getPointInitial() = 0;
+		virtual Point* getPointFinal() = 0;
 		virtual Color* getBackgroundColor()=0;
 		virtual Color* getForeColor()=0;
 		virtual void setPointInitial(Point point) = 0;

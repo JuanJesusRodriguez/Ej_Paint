@@ -1,15 +1,15 @@
 #include "Rectangle.h"
 
-Rectangle::Rectangle(Point pointInitial, Point pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){
-	colorBorder = new ColorBlack();
-	colorArea =  new ColorWhite();
+Rectangle::Rectangle(Point* pointInitial, Point* pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){
+	colorBorder = new Color(COLOR_BLACK);
+	colorArea =  new Color(COLOR_WHITE);
 }
 
-Point Rectangle::getPointInitial(){
+Point* Rectangle::getPointInitial(){
 	return pointInitial;
 }
 
-Point Rectangle::getPointFinal(){
+Point* Rectangle::getPointFinal(){
 	return pointFinal;
 }
 
@@ -21,11 +21,11 @@ Color* Rectangle::getForeColor(){
 	return colorBorder;
 }
 
-void Rectangle::setPointInitial(Point point){
+void Rectangle::setPointInitial(Point* point){
 	pointInitial = point;
 }
 
-void Rectangle::setPointFinal(Point point){
+void Rectangle::setPointFinal(Point* point){
 	pointFinal = point;
 }
 
