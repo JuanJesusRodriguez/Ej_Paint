@@ -6,11 +6,13 @@
 
 class ICanvas{
 	public:
-		virtual void addColoredShape(IColoredShape* coloredShape) = 0;
-		virtual void deleteColoredShape(int uid) = 0;
-		//virtual void modify(void (*change)(Color, int)) = 0;
-		virtual void modify(void (*change)(string property, int uid)) = 0; //propiedad puede ser color o figura (color o move)
 		virtual ~ICanvas() = 0;
+		virtual void create(Shape* shape) = 0;
+		virtual void list() = 0;
+		virtual void select(int uid)= 0;
+		virtual void selectAll() = 0;
+		virtual void unselect(int uid) = 0;
+		virtual void unselectAll() = 0;
 };
 
 #endif
