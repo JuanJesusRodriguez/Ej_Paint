@@ -13,12 +13,23 @@ class Circle: public Shape
         Color colorBorder;
 		Color colorArea;
     public:
-        Circle(Point* pointInitial, Point* pointFinal, Color* colorBorder, Color* colorArea):pointInitial(*pointInitial), pointFinal(*pointFinal), colorBorder(*colorBorder), colorArea(*colorArea){}
+        Circle(Point pointInitial, Point pointFinal);
         Point getPointInitial();
+<<<<<<< Updated upstream
         Point getPointFinal();
         Color getColorBorder();
         Color getColorArea();
         string getShapeType();
+=======
+		Point getPointFinal();
+		Color getBackgroundColor();
+		Color getForeColor();
+		void setPointInitial(Point point);
+		void setPointFinal(Point point);
+		void setBackgroundColor(Color color);
+		void setForeColor(Color color);
+		std::string getShapeType();
+>>>>>>> Stashed changes
 };
 
 #endif

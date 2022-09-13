@@ -7,6 +7,8 @@ double x,y;
 
 public:
 Point(double x,double y);
+bool operator == (Point& point);
+bool operator != (Point& point);
 double getX();
 double getY();
 };

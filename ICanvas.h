@@ -6,11 +6,6 @@
 
 class ICanvas{
 	public:
-
-		virtual void addColoredShape(IColoredShape* coloredShape) = 0;
-		virtual void deleteColoredShape(int uid) = 0;
-		virtual void modify(Color* color, IColoredShape* (*change)(IColoredShape*, Color), int uid) = 0;
-
 		virtual ~ICanvas() = 0;
 		virtual void create(Shape* shape) = 0;
 		virtual void list() = 0;
@@ -18,6 +13,10 @@ class ICanvas{
 		virtual void selectAll() = 0;
 		virtual void unselect(int uid) = 0;
 		virtual void unselectAll() = 0;
+		virtual void addNewForeColor() = 0;
+		virtual void addNewBackgroundColor() = 0;
+		virtual void move(int uid, Point* point) = 0;
+		virtual void remove(int uid, Point* point) = 0;
 };
 
 #endif

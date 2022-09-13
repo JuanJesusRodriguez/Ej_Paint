@@ -1,5 +1,4 @@
 #include "ICanvas.h"
-#include "IColoredShape.h"
 #include "Color.h"
 #include <map>
 
