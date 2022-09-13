@@ -13,7 +13,7 @@ class Circle: public Shape
         Color* colorBorder;
 		Color* colorArea;
     public:
-        Circle(Point* pointInitial, Point* pointFinal);
+        Circle(Point* p1, Point* p2, Color* colorBorder, Color* colorArea);
         Point* getPointInitial();
 		Point* getPointFinal();
 		Color* getBackgroundColor();

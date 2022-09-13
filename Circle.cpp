@@ -1,6 +1,6 @@
 #include "Circle.h"
 
-Circle::Circle(Point* pointInitial, Point* pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){
+Circle::Circle(Point* p1, Point* p2, Color* colorBorder, Color* colorArea):pointInitial(pointInitial), pointFinal(pointFinal){
 	colorBorder = new Color(COLOR_BLACK);
 	colorArea =  new Color(COLOR_WHITE);
 }

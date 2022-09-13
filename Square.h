@@ -13,7 +13,7 @@ class Square: public Shape
         Color* colorBorder;
 		Color* colorArea;
     public:
-        Square(Point* pointInitial, Point* pointFinal);
+        Square(Point* p1, Point* p2, Color* colorBorder, Color* colorArea);
         Point* getPointInitial();
 		Point* getPointFinal();
 		Color* getBackgroundColor();
