@@ -16,22 +16,16 @@ Color* Toolbar::SelectColor(std::string colorTag){
 void Toolbar::initFactoriesColors()
 {
 	FactoryColor* factoryColor = new FactoryColor();
-	this->addColorFactory("hex", factoryColor);
+	this->addColorFactory("generic", factoryColor);
 
-	FactoryColor* factoryColorBlack = new FactoryColor();
-	this->addColorFactory("black", factoryColorBlack);
-
+/*
 	FactoryColor* factoryColorWhite = new FactoryColor();
 	this->addColorFactory("white", factoryColorWhite);
 
 	FactoryColor* factoryColorWhite = new FactoryColor();
 	this->addColorFactory("red", factoryColorRed);
+	*/
 
-	FactoryColor* factoryColorWhite = new FactoryColor();
-	this->addColorFactory("blue", factoryColorBlue);
-
-	FactoryColor* factoryColorWhite = new FactoryColor();
-	this->addColorFactory("green", factoryColorGreen);
 }
 
 void Toolbar::initFactoriesShapes()
