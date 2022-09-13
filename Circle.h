@@ -15,12 +15,6 @@ class Circle: public Shape
     public:
         Circle(Point pointInitial, Point pointFinal);
         Point getPointInitial();
-<<<<<<< Updated upstream
-        Point getPointFinal();
-        Color getColorBorder();
-        Color getColorArea();
-        string getShapeType();
-=======
 		Point getPointFinal();
 		Color getBackgroundColor();
 		Color getForeColor();
@@ -29,7 +23,6 @@ class Circle: public Shape
 		void setBackgroundColor(Color color);
 		void setForeColor(Color color);
 		std::string getShapeType();
->>>>>>> Stashed changes
 };
 
 #endif

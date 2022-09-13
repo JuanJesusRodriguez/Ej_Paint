@@ -1,30 +1,4 @@
 #include "Circle.h"
-<<<<<<< Updated upstream
-
-Point Circle::getPointInitial()
-{
-    return this->pointInitial;
-}
-
-Point Circle::getPointFinal()
-{
-    return this->pointFinal;
-}
-
-Color Circle::getColorBorder()
-{
-    return this->colorBorder;
-}
-
-Color Circle::getColorArea()
-{
-    return this->colorBorder;
-}
-
-std::string Circle::getShapeType()
-{
-    return "Circle";
-=======
 
 Circle::Circle(Point pointInitial, Point pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){
 	colorBorder("black");
@@ -49,7 +23,6 @@ Color Circle::getForeColor(){
 
 void Circle::setPointInitial(Point point){
 	pointInitial = point;
->>>>>>> Stashed changes
 }
 
 void Circle::setPointFinal(Point point){

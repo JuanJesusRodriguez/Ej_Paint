@@ -9,26 +9,6 @@ Point Square::getPointInitial(){
 	return pointInitial;
 }
 
-<<<<<<< Updated upstream
-Color Square::getColorBorder()
-{
-    return this->colorBorder;
-}
-
-Color Square::getColorArea()
-{
-    return this->colorBorder;
-}
-
-std::string Square::getShapeType()
-{
-    return "Square";
-=======
-Point Square::getPointFinal(){
-	return pointFinal;
->>>>>>> Stashed changes
-}
-
 Color Square::getBackgroundColor(){
 	return colorArea;
 }
