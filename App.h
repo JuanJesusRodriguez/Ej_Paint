@@ -8,6 +8,8 @@ class App: public IApp{
 		App();
 		void init();
 		void stop();
+	private:
+
 };
 
 #endif
