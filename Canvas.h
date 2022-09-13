@@ -6,16 +6,20 @@
 #ifndef CANVAS_H_
 #define CANVAS_H_
 
-class Canvas: public ICanvas
+class Canvas : public ICanvas
 {
-	public:
-		Canvas();
-		void addColoredShape(IColoredShape* coloredShape);
-		void deleteColoredShape(int uid);
-		void modify(Color* color, IColoredShape* (*change)(IColoredShape*, Color), int uid);
-		
-	private:                           
-		static std::map<int, IColoredShape*> drawnShape;
+public:
+	void create(Shape *shape);
+	void list();
+	void select(int uid);
+	void selectAll();
+	void unselect(int uid);
+	void unselectAll();
+
+private:
+	int nextId = 0;
+	std::map<int, Shape *> ListOfShapes;
+	std::map<int, Shape *> SelectedShapes;
 };
 
 #endif
