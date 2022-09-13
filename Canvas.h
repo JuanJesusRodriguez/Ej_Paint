@@ -18,6 +18,7 @@ public:
 	void addNewBackgroundColor(int uid, Color* color);
 	void move(int uid, Point pointInitial, Point pointFinal);
 	void remove(int uid, Point point);
+	void open(Compiler* compiler , string filename);
 
 private:
 	int nextId = 0;

@@ -1,7 +1,11 @@
 #include "Canvas.h"
+#include "compiler.h"
+#include <fstream>
 #include <iostream>
 
-void Canvas::create(Shape *shape)
+using namespace std;
+
+void Canvas::create(Shape* shape)
 {
 	ListOfShapes.insert(make_pair(nextId, shape));
 	nextId++;
@@ -94,4 +98,13 @@ void Canvas::remove(int uid, Point point)
 			std::cout << "Error: There is nothing to remove" << std::endl;
 		}
 	}
+}
+
+void Canvas::open(Compiler* compiler , string filename){
+		ifstream inputFile(filename);
+		string command;
+		while(getline(inputFile,command))
+		{
+			compiler->compile(command);
+		}
 }
