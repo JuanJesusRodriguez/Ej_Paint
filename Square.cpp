@@ -1,26 +1,39 @@
 #include "Square.h"
 
-Point Square::getPointFinal()
-{
-    return this->pointFinal;
+Square::Square(Point pointInitial, Point pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){
+	colorBorder = new ColorBlack();
+	colorArea =  new ColorWhite();
 }
 
-Point Square::getPointInitial()
-{
-    return this->pointInitial;
+Point Square::getPointInitial(){
+	return pointInitial;
 }
 
-Color Square::getColorBorder()
-{
-    return this->colorBorder;
+Color* Square::getBackgroundColor(){
+	return colorArea;
 }
 
-Color Square::getColorArea()
-{
-    return this->colorBorder;
+Color* Square::getForeColor(){
+	return colorBorder;
 }
 
-std::string Square::getShapeType()
-{
-    return "Square";
+void Square::setPointInitial(Point point){
+	pointInitial = point;
 }
+
+void Square::setPointFinal(Point point){
+	pointFinal = point;
+}
+
+void Square::setBackgroundColor(Color* color){
+	colorArea = color;
+}
+
+void Square::setForeColor(Color* color){
+	colorBorder = color;
+}
+
+std::string Square::getShapeType(){
+	return "Square";
+}
+
