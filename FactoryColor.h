@@ -3,5 +3,5 @@
 class FactoryColor : public IFactoryColor
 {
     public:
-        Color *createColor();
+        Color* createColor(string colorValue);
 };

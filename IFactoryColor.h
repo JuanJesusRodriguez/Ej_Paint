@@ -2,9 +2,10 @@
 #define __ICOLORFACTORY_H_
 #include "Color.h"
 
-class IFactoryColor {
+class IFactoryColor
+{
     public:
-        virtual Color* createColor() = 0;
+        virtual Color* createColor(string colorValue) = 0;
 };
 
 #endif /* __ICOLORFACTORY_H_ */

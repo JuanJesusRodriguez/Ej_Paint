@@ -1,10 +1,13 @@
 #include "FactoryColor.h"
 
-Color *FactoryColorBlack::createColor()
+Color* FactoryColor::createColor(string colorValue)
 {
-    return new ColorBlack();
+    Color* color = new Color(colorValue);
+    return color;
 }
 
+
+/*
 Color *FactoryColorWhite::createColor()
 {
     return new ColorWhite();
@@ -14,13 +17,4 @@ Color *FactoryColorRed::createColor()
 {
     return new ColorRed();
 }
-
-Color *FactoryColorBlue::createColor()
-{
-    return new ColorBlue();
-}
-
-Color *FactoryColorGreen::createColor()
-{
-    return new ColorGreen();
-}
+*/
