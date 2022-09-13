@@ -13,7 +13,7 @@ class Rectangle: public Shape
 		Color* colorBorder;
 		Color* colorArea;
 	public:
-		Rectangle(Point* pointInitial, Point* pointFinal);
+		Rectangle(Point* p1, Point* p2, Color* colorBorder, Color* colorArea);
         Point* getPointInitial();
 		Point* getPointFinal();
 		Color* getBackgroundColor();
