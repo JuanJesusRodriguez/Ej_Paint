@@ -36,3 +36,11 @@ void Canvas::unselect(int uid){
 void Canvas::unselectAll(){
 	SelectedShapes = std::map<int, Shape *>();
 }
+
+void Canvas::addNewForeColor(){
+	auto iterator = ListOfShapes.find(uid);
+
+}
+void addNewBackgroundColor();
+void move(int uid, Point* point);
+void remove(int uid, Point* point);

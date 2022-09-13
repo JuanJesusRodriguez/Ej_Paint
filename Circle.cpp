@@ -1,8 +1,8 @@
 #include "Circle.h"
 
 Circle::Circle(Point pointInitial, Point pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){
-	colorBorder("black");
-	colorArea("white");
+	colorBorder = new ColorBlack();
+	colorArea =  new ColorWhite();
 }
 
 Point Circle::getPointInitial(){
@@ -13,11 +13,11 @@ Point Circle::getPointFinal(){
 	return pointFinal;
 }
 
-Color Circle::getBackgroundColor(){
+Color* Circle::getBackgroundColor(){
 	return colorArea;
 }
 
-Color Circle::getForeColor(){
+Color* Circle::getForeColor(){
 	return colorBorder;
 }
 
@@ -29,11 +29,11 @@ void Circle::setPointFinal(Point point){
 	pointFinal = point;
 }
 
-void Circle::setBackgroundColor(Color color){
+void Circle::setBackgroundColor(Color* color){
 	colorArea = color;
 }
 
-void Circle::setForeColor(Color color){
+void Circle::setForeColor(Color* color){
 	colorBorder = color;
 }
 

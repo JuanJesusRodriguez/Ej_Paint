@@ -1,19 +1,19 @@
 #include "Square.h"
 
 Square::Square(Point pointInitial, Point pointFinal):pointInitial(pointInitial), pointFinal(pointFinal){
-	colorBorder("black");
-	colorArea("white");
+	colorBorder = new ColorBlack();
+	colorArea =  new ColorWhite();
 }
 
 Point Square::getPointInitial(){
 	return pointInitial;
 }
 
-Color Square::getBackgroundColor(){
+Color* Square::getBackgroundColor(){
 	return colorArea;
 }
 
-Color Square::getForeColor(){
+Color* Square::getForeColor(){
 	return colorBorder;
 }
 
@@ -25,11 +25,11 @@ void Square::setPointFinal(Point point){
 	pointFinal = point;
 }
 
-void Square::setBackgroundColor(Color color){
+void Square::setBackgroundColor(Color* color){
 	colorArea = color;
 }
 
-void Square::setForeColor(Color color){
+void Square::setForeColor(Color* color){
 	colorBorder = color;
 }
 
