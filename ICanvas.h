@@ -15,7 +15,7 @@ class ICanvas{
 		virtual void unselectAll() = 0;
 		virtual void addNewForeColor(int uid, Color* color) = 0;
 		virtual void addNewBackgroundColor(int uid, Color* color) = 0;
-		virtual void move(int uid, Point pointInitial, Point pointFinal) = 0;
+		virtual void move(int uid, Point* pointInitial, Point* pointFinal) = 0;
 		virtual void remove(int uid, Point point) = 0;
 };
 
