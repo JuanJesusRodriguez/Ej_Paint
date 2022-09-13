@@ -13,10 +13,11 @@ class App: public IApp{
 		App();
 		void init();
 		void stop();
+		~App(){};
 	private:
 		bool end;
 		CLI::App* cliApp;
-		CommandParseLine commandParseLine;
+		CommandParseLine* commandParseLine;
 		IParser* parser;
 		ICanvas* canvas;
 		IToolbar* toolbar;

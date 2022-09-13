@@ -6,6 +6,7 @@
 #include "IColorSelect.h"
 #include "FactoryShape.h"
 #include "FactoryColor.h"
+#include "FactoryColorFixed.h"
 
 #ifndef TOOLBAR_H_
 #define TOOLBAR_H_
@@ -17,6 +18,7 @@ class Toolbar: public IToolbar{
 		Color* SelectColor(std::string colorType);
 		void addShapeFactory(string factoryName, FactoryShape* factoryType);
 		void addColorFactory(string factoryName, FactoryColor* factoryType);
+		void addColorFactoryFixed(string factoryName, FactoryColorFixed* factoryType);
 		void initFactoriesColors();
 		void initFactoriesShapes();
 
@@ -24,6 +26,7 @@ class Toolbar: public IToolbar{
 
 		map<string, FactoryShape*> FactoriesShape;
 		map<string, FactoryColor*> FactoriesColor;
+		map<string, FactoryColorFixed*> FactoriesColorFixed;
 
 
 		//map<string, FactoryColor*> colorFactories;

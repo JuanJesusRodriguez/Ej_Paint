@@ -9,6 +9,8 @@
 #include <string>
 #include <iostream>
 
+#include "IFactoryColorFixed.h"
+
 App::App():end(false)
 {
 	cliApp = new CLI::App("Application Paint");
@@ -18,24 +20,23 @@ App::App():end(false)
 	toolbar = new Toolbar();
 	compiler = new Compiler(this, parser, canvas, toolbar);
 
-	IFactoryShape *factoryRectangle = FactoryRectangle();
-	toolbar->addShapeFactory("Rectangle", *factoryRectangle);
-	IFactoryShape *factorySquare = FactorySquare();
-	toolbar->addShapeFactory("Square", *factorySquare);
-	IFactoryShape *factoryCircle = FactoryCircle();
-	toolbar->addShapeFactory("Circle", *factoryCircle);
+	FactoryShape* factoryRectangle = new FactoryRectangle();
+	toolbar->addShapeFactory("Rectangle", factoryRectangle);
+	FactoryShape* factorySquare = new FactorySquare();
+	toolbar->addShapeFactory("Square", factorySquare);
+	FactoryShape *factoryCircle = new FactoryCircle();
+	toolbar->addShapeFactory("Circle", factoryCircle);
 
-	IFactoryColor* factoryWhite = new FactoryColor();
-	toolbar->addColorFactory("White", factoryWhite);
-	IFactoryColor* factoryBlack = new FactoryColor();
-	toolbar->addColorFactory("Black", factoryBlack);
-	IFactoryColor* factoryRed = new FactoryColor();
-	toolbar->addColorFactory("Red", factoryRed);
-	IFactoryColor* factoryBlue = new FactoryColor();
-	toolbar->addColorFactory("Blue", factoryBlue);
-	IFactoryColor* factoryGreen = new FactoryColor();
-	toolbar->addColorFactory("Green", factoryGreen);
+	string animals[] = {"White", "Black", "Red", "Blue", "Green"}; 
+
+	for(string s:animals)
+	{
+		FactoryColorFixed* factory = new FactoryColorFixed(s);
+		toolbar->addColorFactoryFixed(s, factory);
+	}
 }
+
+//IMPLEMENTAR DESTRUCTOR PENDIENTE
 
 
 void App::init(){

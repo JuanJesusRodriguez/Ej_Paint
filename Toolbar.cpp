@@ -59,6 +59,11 @@ void Toolbar::addColorFactory(string factoryName, FactoryColor* factoryType)
 	this->FactoriesColor.insert(make_pair(factoryName,factoryType));
 }
 
+void Toolbar::addColorFactoryFixed(string factoryName, FactoryColorFixed* factoryType)
+{
+	this->FactoriesColorFixed.insert(make_pair(factoryName,factoryType));
+}
+
 void Toolbar::addShapeFactory(string factoryName, FactoryShape* factoryType)
 {
 	this->FactoriesShape.insert(make_pair(factoryName,factoryType));
