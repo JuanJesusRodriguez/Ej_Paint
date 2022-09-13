@@ -1,15 +1,14 @@
 #include "Canvas.h"
+#include<iostream>
 
-void Canvas::addColoredShape(IColoredShape* coloredShape){
-    int uid = drawnShape.size()+1;
-    drawnShape.insert(pair<int,IColoredShape*> (uid,coloredShape) );
+void Canvas::create(Shape *shape)
+{
+    ListOfShapes.insert(make_pair(nextId, shape));
+    nextId++;
 }
 
-void Canvas::deleteColoredShape(int uid){
-    drawnShape.erase(uid);
-}
-
-void modify(void (*ptr_change)(string property, int uid)){
-    if(ptr_change != NULL){
-            //ptr_change(property,uid);       
+void Canvas::list(){
+    for (auto it = 0 ; it < ListOfShapes.size(); it++){
+        std::cout<<ListOfShapes[it] << std::endl;
+    }
 }
