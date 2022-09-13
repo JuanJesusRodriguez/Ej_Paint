@@ -17,6 +17,11 @@ public:
     {
         canvas_->unselect(uid_);
     }
+
+    bool isSerial()
+    {
+        return true;
+    }
 };
 
 #endif // __COMMANDUNSELECT__H

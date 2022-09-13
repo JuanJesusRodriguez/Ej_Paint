@@ -22,6 +22,11 @@ public:
     {
         canvas_->open(compiler_, filename_);
     }
+
+    bool isSerial()
+    {
+        return false;
+    }
 };
 
 #endif // __COMMANDOPEN__H

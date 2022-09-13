@@ -22,6 +22,11 @@ public:
         //Falta funcion
         canvas_->addNewBackgroundColor(uid_,toolbar_->SelectColor(backColor_));
     }
+
+    bool isSerial()
+    {
+        return true;
+    }
 };
 
 #endif // __COMMANDAPLYBACKCOLOR__H

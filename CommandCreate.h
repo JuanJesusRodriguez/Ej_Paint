@@ -10,24 +10,28 @@ private:
     Toolbar *toolbar_;
     Canvas *canvas_;
     string shapeType_;
-	string backColor_;
-	string foreColor_;
-	Point *pointInitial_;
-	Point *pointFinal_;
-    
+    string backColor_;
+    string foreColor_;
+    Point *pointInitial_;
+    Point *pointFinal_;
 
 public:
-    CommandCreate(Toolbar *toolbar, Canvas *canvas, string shapeType, string backColor, string foreColor, Point *pointInitial, Point *pointFinal) :
-     toolbar_{toolbar}, canvas_{canvas}, pointInitial_(pointInitial), pointFinal_(pointFinal)
+    CommandCreate(Toolbar *toolbar, Canvas *canvas, string shapeType, string backColor, string foreColor, Point *pointInitial, Point *pointFinal) : toolbar_{toolbar}, canvas_{canvas}, pointInitial_(pointInitial), pointFinal_(pointFinal)
     {
-		shapeType_ = shapeType;
+        shapeType_ = shapeType;
         backColor_ = backColor;
-		foreColor_ = foreColor;
+        foreColor_ = foreColor;
     }
-    void execute(){
-        //Falta funcion
-		Shape *shape = toolbar_ ->SelectShape((shapeType_),pointInitial_,pointFinal_,toolbar_->SelectColor(backColor_),toolbar_->SelectColor(foreColor_));
-		canvas_ ->create(shape);
+    void execute()
+    {
+        // Falta funcion
+        Shape *shape = toolbar_->SelectShape((shapeType_), pointInitial_, pointFinal_, toolbar_->SelectColor(backColor_), toolbar_->SelectColor(foreColor_));
+        canvas_->create(shape);
+    }
+
+    bool isSerial()
+    {
+        return true;
     }
 };
 

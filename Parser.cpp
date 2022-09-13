@@ -107,7 +107,7 @@ void Parser::setupUnselect(CLI::App* cliApp, CommandParseLine* commandParseLine)
 		);
 }
 
-void Parser::setypUnselectAll(CLI::App* cliApp, CommandParseLine* commandParseLine){
+void Parser::setupUnselectAll(CLI::App* cliApp, CommandParseLine* commandParseLine){
 	auto *subCommand = cliApp->add_subcommand("UnselectAll", "Unselect all shapes");
 
 		subCommand->callback(

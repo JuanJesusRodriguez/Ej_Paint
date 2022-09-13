@@ -16,6 +16,11 @@ public:
     {
         canvas_->list();
     }
+
+    bool isSerial()
+    {
+        return false;
+    }
 };
 
 #endif // __COMMANDLIST__H

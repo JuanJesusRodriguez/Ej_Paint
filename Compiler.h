@@ -11,16 +11,16 @@
 
 class Compiler: public ICompiler{
 	public:
-		Compiler(IApp* app, IParser* parser, ICanvas* canvas, IToolbar* toolbar);
+		Compiler(IApp* app, IParser* parser, Canvas* canvas, Toolbar* toolbar);
 		void compile(std::string command);
 	private:
 		IApp *app;
 		IParser* parser;
-		ICanvas* canvas;
-		IToolbar* toolbar;
+		Canvas* canvas;
+		Toolbar* toolbar;
 		CommandParseLine* executeCommand;
 		typedef IExecuteCommand* (*executeFuntion)(CommandParseLine*);
-		std::map<std::string, *executeFuntion> lineCommandRegister;
+		std::map<std::string, executeFuntion> lineCommandRegister;
 
 		void initializeLineCommandRegister();
 };
