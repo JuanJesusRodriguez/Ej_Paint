@@ -11,7 +11,7 @@ class IToolbar {
     virtual Color* SelectColor(std::string colorTag) = 0;
     virtual ~IToolbar() = 0;
 
-    virtual void initShapes() = 0;
-    virtual void initColors() = 0;
+    virtual void initFactoriesColors() = 0;
+    virtual void initFactoriesShapes() = 0;
 };
 #endif

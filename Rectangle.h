@@ -16,6 +16,8 @@ class Rectangle: public Shape
 		Rectangle(Point* pointInitial, Point* pointFinal, Color* colorBorder, Color* colorArea):pointInitial(*pointInitial), pointFinal(*pointFinal), colorBorder(*colorBorder), colorArea(*colorArea){}
 		Point getPointInitial();
 		Point getPointFinal();
+		Color getColorBorder();
+        Color getColorArea();
 		std::string getShapeType();
 };
 

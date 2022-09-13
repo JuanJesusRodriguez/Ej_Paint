@@ -1,4 +1,5 @@
 #include "Toolbar.h"
+//#include "FactoryShape.h"
 
 /*
 Shape* Toolbar::SelectShape(std::string shapeTag){
@@ -11,7 +12,7 @@ Color* Toolbar::SelectColor(std::string colorTag){
 }
 */
 
-void Toolbar::initColors()
+void Toolbar::initFactoriesColors()
 {
 	FactoryColor* factoryColor = new FactoryColor();
 	this->addColorFactory("hex", factoryColor);
@@ -32,7 +33,7 @@ void Toolbar::initColors()
 	this->addColorFactory("green", factoryColorGreen);
 }
 
-void Toolbar::initShapes()
+void Toolbar::initFactoriesShapes()
 {
 	FactoryShape* factorySquare = new FactorySquare();
 	this->addShapeFactory("square", factorySquare);

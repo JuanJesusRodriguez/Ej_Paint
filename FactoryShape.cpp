@@ -3,7 +3,7 @@
 #include "Rectangle.h"
 #include "Square.h"
 
-Shape* FactoryCicle::createShape(Point* p1, Point* p2, Color* colorBorder, Color* colorArea)
+Shape* FactoryCircle::createShape(Point* p1, Point* p2, Color* colorBorder, Color* colorArea)
 {
 	return new Circle(p1,p2,colorBorder,colorArea);
 }

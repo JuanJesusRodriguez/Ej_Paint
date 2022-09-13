@@ -1,6 +1,4 @@
-#include <iostream>
-#include "square.h"
-using namespace std;
+#include "Square.h"
 
 Point Square::getPointFinal()
 {
@@ -12,7 +10,17 @@ Point Square::getPointInitial()
     return this->pointInitial;
 }
 
+Color Square::getColorBorder()
+{
+    return this->colorBorder;
+}
+
+Color Square::getColorArea()
+{
+    return this->colorBorder;
+}
+
 std::string Square::getShapeType()
 {
-    return "square";
+    return "Square";
 }
