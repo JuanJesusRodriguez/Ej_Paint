@@ -12,7 +12,7 @@
 
 class Toolbar: public IToolbar{
 	public:
-		Shape* SelectShape(std::string shapeType);
+		Shape* SelectShape(std::string shapeType, Point* p1, Point* p2, Color* colorBorder, Color* colorArea);
 		Color* SelectColor(); //Now there is only the generic type of color, it is unnecessary to specify an string colorType.
 		Color* SelectColor(std::string colorType);
 		void initFactoriesColors();

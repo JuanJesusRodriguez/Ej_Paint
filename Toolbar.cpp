@@ -1,19 +1,9 @@
 #include "Toolbar.h"
 #include<map>
+#define TOOLBAR_DEFAULT_COLOR __COLOR__HPP_DEFAULT_COLOR
 //#include "FactoryShape.h"
 
-/*
-Shape* Toolbar::SelectShape(std::string shapeTag){
-	return shapeSelector->shapeSelect(shapeTag);
-}
-
-Color* Toolbar::SelectColor(std::string colorTag){
-	return colorSelector->colorSelect(colorTag);
-	
-}
-*/
-
-Shape* Toolbar::SelectShape(std::string shapeTag)
+Shape* Toolbar::SelectShape(std::string shapeTag, Point* p1, Point* p2, Color* colorBorder, Color* colorArea)
 {
 	if(FactoriesShape.find(shapeTag) == FactoriesShape.end())
 	{
@@ -22,13 +12,20 @@ Shape* Toolbar::SelectShape(std::string shapeTag)
 
 	FactoryShape* factoryShape = FactoriesShape[shapeTag];
 
-	Shape* s=factoryShape->createShape();
+	Shape* s=factoryShape->createShape(p1, p2, colorBorder, colorArea);
 }
-Color* Toolbar::SelectColor(std::string colorTag)
+
+Color* Toolbar::SelectColor(std::string colorTag=TOOLBAR_DEFAULT_COLOR)
 {
+		if(FactoriesColor.find(colorTag) == FactoriesColor.end())
+	{
+		throw new std::exception(); //FactoryNotFoundException(key);
+	}
 
+	FactoryColor* factoryColor = FactoriesColor[colorTag];
+
+	Color* s=factoryColor->createColor(colorTag);
 }
-
 
 void Toolbar::initFactoriesColors()
 {
@@ -59,10 +56,10 @@ void Toolbar::initFactoriesShapes()
 
 void Toolbar::addColorFactory(string factoryName, FactoryColor* factoryType)
 {
-	this->colorFactories.insert(make_pair(factoryName,factoryType));
+	this->FactoriesColor.insert(make_pair(factoryName,factoryType));
 }
 
 void Toolbar::addShapeFactory(string factoryName, FactoryShape* factoryType)
 {
-	this->shapeFactories.insert(make_pair(factoryName,factoryType));
+	this->FactoriesShape.insert(make_pair(factoryName,factoryType));
 }

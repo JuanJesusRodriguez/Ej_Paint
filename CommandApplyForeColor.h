@@ -20,6 +20,7 @@ public:
     }
     void execute(){
         //Falta funcion
+        canvas_->addNewForeColor(uid_,toolbar_->SelectColor(foreColor_));
     }
 };
 
