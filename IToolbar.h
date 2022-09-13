@@ -10,5 +10,8 @@ class IToolbar {
     virtual Shape* SelectShape(std::string shapeTag) = 0;
     virtual Color* SelectColor(std::string colorTag) = 0;
     virtual ~IToolbar() = 0;
+
+    virtual void initShapes() = 0;
+    virtual void initColors() = 0;
 };
 #endif

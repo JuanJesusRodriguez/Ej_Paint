@@ -1,7 +1,6 @@
 #include "Shape.h"
 #include "Point.h"
-
-using namespace std;
+#include "Color.h"
 
 #ifndef __CIRCLE__HPP
 #define __CIRCLE__HPP
@@ -9,10 +8,12 @@ using namespace std;
 class Circle: public Shape
 {
     private:
-        Point _pointInitial;
-        Point _pointFinal;
+        Point pointInitial;
+        Point pointFinal;
+        Color colorBorder;
+		Color colorArea;
     public:
-        Circle(Point pointInitial, Point pointFinal):_pointInitial(pointInitial), _pointFinal(pointFinal){}
+        Circle(Point* pointInitial, Point* pointFinal, Color* colorBorder, Color* colorArea):pointInitial(*pointInitial), pointFinal(*pointFinal), colorBorder(*colorBorder), colorArea(*colorArea){}
         Point getPointInitial();
         Point getPointFinal();
         string getShapeType();

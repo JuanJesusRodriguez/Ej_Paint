@@ -18,13 +18,19 @@ class ShapeConstructors: public IShapeConstructors
 		bool isValidShape(std::string shapeTypeName);
 	private:
 		constructorMap allConstructors;
-		GetCallConstructor* shapeFuntions[] = {
+		
+		GetCallConstructor* shapeFuntions[3] = {
 				GetCallConstructorRectangle(),
 				GetCallConstructorSquare(),
 				GetCallConstructorCircle()
 		};
-		std::string shapeNames[] = {"rectangle", "square", "circle"};
+		
+		std::string shapeNames[3] = {"rectangle", "square", "circle"};
 		int iterator=0;
+
+		GetCallConstructorRectangle();
+		GetCallConstructorSquare();
+		GetCallConstructorCircle();
 };
 
 #endif

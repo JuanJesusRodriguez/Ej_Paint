@@ -1,5 +1,6 @@
 #include "IShapeSelect.h"
-#include "IShapeConstructors.h"
+//#include "IShapeConstructors.h"
+#include "ShapeConstructors.h"
 
 #ifndef __SHAPESELECT__HPP
 #define __SHAPESELECT__HPP

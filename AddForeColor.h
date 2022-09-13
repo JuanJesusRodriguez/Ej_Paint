@@ -1,6 +1,9 @@
 #include "IAddForeColor.h"
+#include "ICanvas.h"
 
 class AddForeColor : public IAddForeColor{
-
-    void addForeColor(Color* color,int uid);
+	public:
+    	void addForeColor(Color* color,int uid);
+	private:
+    	ICanvas* iCanvas;
 };
