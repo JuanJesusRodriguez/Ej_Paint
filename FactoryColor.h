@@ -1,17 +1,36 @@
-#ifndef __FACTORYCOLOR__
-#define __FACTORYCOLOR__
+#include "IFactoryColor.h"
 
-class FactoryColor
+class FactoryColorBlack : public IFactoryColor
 {
 public:
-	virtual Color* createShape(Point* p1, Point* p2, Color* colorBorder, Color* colorArea) = 0;
+    FactoryColorBlack();
+    Color *createColor();
 };
 
-class FactoryCicle: public FactoryShape
+class FactoryColorWhite : public IFactoryColor
 {
 public:
-	FactoryCicle() {}
-	Shape* createShape(Point* p1, Point* p2, Color* colorBorder, Color* colorArea);
+    FactoryColorWhite();
+    Color *createColor();
 };
 
-#endif
+class FactoryColorRed
+{
+public:
+    FactoryColorRed();
+    Color *createColor();
+};
+
+class FactoryColorBlue
+{
+public:
+    FactoryColorBlue();
+    Color *createColor();
+};
+
+class FactoryColorGreen
+{
+public:
+    FactoryColorGreen();
+    Color *createColor();
+};
