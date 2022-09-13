@@ -1,12 +1,27 @@
-#include "circle.h"
+#include "Circle.h"
 
-Point Circle::getPointInitial(){
-    return _pointInitial;
+Point Circle::getPointInitial()
+{
+    return this->pointInitial;
 }
-Point Circle::getPointFinal(){
-    return _pointFinal;
+
+Point Circle::getPointFinal()
+{
+    return this->pointFinal;
 }
-string Circle::getShapeType(){
+
+Color Circle::getColorBorder()
+{
+    return this->colorBorder;
+}
+
+Color Circle::getColorArea()
+{
+    return this->colorBorder;
+}
+
+std::string Circle::getShapeType()
+{
     return "Circle";
 }
 

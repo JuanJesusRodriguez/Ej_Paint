@@ -16,6 +16,8 @@ class Circle: public Shape
         Circle(Point* pointInitial, Point* pointFinal, Color* colorBorder, Color* colorArea):pointInitial(*pointInitial), pointFinal(*pointFinal), colorBorder(*colorBorder), colorArea(*colorArea){}
         Point getPointInitial();
         Point getPointFinal();
+        Color getColorBorder();
+        Color getColorArea();
         string getShapeType();
 };
 

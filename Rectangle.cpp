@@ -1,15 +1,26 @@
 #include "Rectangle.h"
-#include "Point.h"
-#include <string>
 
-Point Rectangle::getPointInitial(){
+Point Rectangle::getPointInitial()
+{
 	return this->pointInitial;
 }
 
-Point Rectangle::getPointInitial(){
+Point Rectangle::getPointInitial()
+{
 	return this->pointFinal;
 }
 
-std::string getShapeType(){
+Color Rectangle::getColorBorder()
+{
+    return this->colorBorder;
+}
+
+Color Rectangle::getColorArea()
+{
+    return this->colorBorder;
+}
+
+std::string getShapeType()
+{
 	return "Rectangle";
 }

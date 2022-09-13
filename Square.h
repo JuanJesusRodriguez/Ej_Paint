@@ -16,7 +16,9 @@ class Square: public Shape
         Square(Point* pointInitial, Point* pointFinal, Color* colorBorder, Color* colorArea):pointInitial(*pointInitial), pointFinal(*pointFinal), colorBorder(*colorBorder), colorArea(*colorArea){}
         Point getPointInitial();
         Point getPointFinal();
-        string getShapeType();
+        Color getColorBorder();
+        Color getColorArea();
+        std::string getShapeType();
 };
 
 #endif
