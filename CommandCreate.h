@@ -26,6 +26,8 @@ public:
     }
     void execute(){
         //Falta funcion
+		Shape *shape = toolbar_ ->getShape(shapeType_,pointInitial_,pointFinal_,toolbar_->getColor(backColor_),toolbar_->getColor(foreColor_));
+		canvas_ ->create(shape);
     }
 };
 
