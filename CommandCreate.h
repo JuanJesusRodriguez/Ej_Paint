@@ -1,14 +1,32 @@
-#include "ICommandCreate.h"
-#include "IPointsInitialFinal.h"
-#include "Shape.h"
+#include "IExecuteCommand.h"
+#include "Toolbar.h"
+#include "Canvas.h"
+#ifndef __COMMANDCREATE__H
+#define __COMMANDCREATE__H
 
-#ifndef COMMANDCREATE_H_
-#define COMMANDCREATE_H_
+class CommandCreate : public IExecuteCommand
+{
+private:
+    Toolbar *toolbar_;
+    Canvas *canvas_;
+    string shapeType_;
+	string backColor_;
+	string foreColor_;
+	Point *pointInitial_;
+	Point *pointFinal_;
+    
 
-class CommandCreate: public ICommandCreate{
-	public:
-		CommandCreate();
-		virtual void create(Shape* shape, IPointsInitialFinal* pointsInitialFinal);
+public:
+    CommandCreate(Toolbar *toolbar, Canvas *canvas, string shapeType, string backColor, string foreColor, Point *pointInitial, Point *pointFinal) :
+     toolbar_{toolbar}, canvas_{canvas}, pointInitial_(pointInitial), pointFinal_(pointFinal)
+    {
+		shapeType_ = shapeType;
+        backColor_ = backColor;
+		foreColor_ = foreColor;
+    }
+    void execute(){
+        //Falta funcion
+    }
 };
 
-#endif
+#endif // __COMMANDCREATE__H
