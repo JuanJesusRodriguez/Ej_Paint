@@ -1,12 +1,24 @@
-#include "ICommandRemove.h"
-#ifndef __COMMANDREMOVE__HPP
-#define __COMMANDREMOVE__HPP
+#include "IExecuteCommand.h"
+#include "Toolbar.h"
+#include "Canvas.h"
+#ifndef __COMMANDREMOVE__H
+#define __COMMANDREMOVE__H
 
-class CommandRemove : public ICommandRemove
+class CommandRemove : public IExecuteCommand
 {
+private:
+    Canvas *canvas_;
+    Point pointInitial_;
+    int uid_;
+
 public:
-    CommandRemove();
-    void remove(int id, Point point);
+    CommandRemove(Canvas* canvas, int uid, Point pointInitial) : 
+    canvas_{canvas} , uid_{uid}, pointInitial_{pointInitial} {}
+
+    void execute()
+    {
+        canvas_->remove(uid_,pointInitial_);
+    }
 };
 
-#endif // __COMMANDREMOVE__HPP
+#endif // __COMMANDREMOVE__H
