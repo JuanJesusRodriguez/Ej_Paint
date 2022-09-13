@@ -27,9 +27,9 @@ App::App():end(false)
 	FactoryShape *factoryCircle = new FactoryCircle();
 	toolbar->addShapeFactory("Circle", factoryCircle);
 
-	string animals[] = {"White", "Black", "Red", "Blue", "Green"}; 
+	string colorArray[] = {"White", "Black", "Red", "Blue", "Green"}; 
 
-	for(string s:animals)
+	for(string s:colorArray)
 	{
 		FactoryColorFixed* factory = new FactoryColorFixed(s);
 		toolbar->addColorFactoryFixed(s, factory);
