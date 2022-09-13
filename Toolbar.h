@@ -11,9 +11,14 @@ class Toolbar: public IToolbar{
 	public:
 		Shape* SelectShape(std::string shapeTag);
 		Color* SelectColor(std::string colorTag);
+		void initColors();
+		void initShapes();
+
+		/*
 	private:
 		IShapeSelect* shapeSelector;
 		IColorSelect* colorSelector;
+		*/
 
 };
 
