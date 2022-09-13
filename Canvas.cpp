@@ -64,7 +64,7 @@ void Canvas::addNewBackgroundColor(int uid, Color *color)
 	}
 }
 
-void Canvas::move(int uid, Point pointInitial, Point pointFinal)
+void Canvas::move(int uid, Point* pointInitial, Point* pointFinal)
 {
 	auto iterator = ListOfShapes.find(uid);
 	if (iterator != ListOfShapes.end())
@@ -87,7 +87,7 @@ void Canvas::remove(int uid, Point point)
 		{
 			for (auto iterator : ListOfShapes)
 			{
-				if (iterator.second->getPointInitial() == point || iterator.second->getPointFinal() == point)
+				if ( point == iterator.second->getPointInitial() || iterator.second->getPointFinal() == point)
 				{
 					ListOfShapes.erase(ListOfShapes.find(iterator.first));
 				}

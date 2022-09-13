@@ -1,5 +1,6 @@
 #include "ICanvas.h"
 #include "Color.h"
+#include "Compiler.h"
 #include <map>
 
 #ifndef CANVAS_H_
@@ -16,7 +17,7 @@ public:
 	void unselectAll();
 	void addNewForeColor(int uid, Color* color);
 	void addNewBackgroundColor(int uid, Color* color);
-	void move(int uid, Point pointInitial, Point pointFinal);
+	void move(int uid, Point* pointInitial, Point* pointFinal);
 	void remove(int uid, Point point);
 	void open(Compiler* compiler , string filename);
 

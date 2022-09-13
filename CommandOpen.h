@@ -1,13 +1,14 @@
 #include "IExecuteCommand.h"
 #include "Toolbar.h"
 #include "Canvas.h"
+#include "Compiler.h"
 #ifndef __COMMANDOPEN__H
 #define __COMMANDOPEN__H
 
 class CommandOpen : public IExecuteCommand
 {
 private:
-    Compiler *compiler_;
+    Compiler* compiler_;
     Canvas *canvas_;
     string filename_;
 
