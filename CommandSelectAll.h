@@ -17,10 +17,6 @@ public:
         canvas_->selectAll();
     }
 
-    bool isSerial()
-    {
-        return true;
-    }
 };
 
 #endif // __COMMANDSELECTALL__H

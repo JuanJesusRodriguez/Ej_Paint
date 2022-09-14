@@ -21,10 +21,6 @@ public:
         canvas_->move(uid_, pointInitial_, pointFinal_);
     }
 
-    bool isSerial()
-    {
-        return true;
-    }
 };
 
 #endif // __COMMANDMOVE__H

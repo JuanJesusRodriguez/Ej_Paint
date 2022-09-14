@@ -20,10 +20,6 @@ public:
         canvas_->remove(uid_,pointInitial_);
     }
 
-    bool isSerial()
-    {
-        return true;
-    }
 };
 
 #endif // __COMMANDREMOVE__H

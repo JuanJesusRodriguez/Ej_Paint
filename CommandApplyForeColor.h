@@ -23,10 +23,6 @@ public:
         canvas_->addNewForeColor(uid_,toolbar_->SelectColor(foreColor_));
     }
 
-    bool isSerial()
-    {
-        return true;
-    }
 };
 
 #endif // __COMMANDAPLYFORECOLOR__H

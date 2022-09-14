@@ -18,10 +18,6 @@ public:
         canvas_->select(uid_);
     }
 
-    bool isSerial()
-    {
-        return true;
-    }
 };
 
 #endif // __COMMANDSELECT__H

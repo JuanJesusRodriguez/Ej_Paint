@@ -29,10 +29,6 @@ public:
         canvas_->create(shape);
     }
 
-    bool isSerial()
-    {
-        return true;
-    }
 };
 
 #endif // __COMMANDCREATE__H
